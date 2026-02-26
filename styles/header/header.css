@@ -1,13 +1,10 @@
 .header{
-  display: grid;
-  grid-template-columns: 1fr 5fr;
-  align-items: center;
-  background-color: gray;
-  color: white;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+ display: grid;
+ grid-template-columns: 1fr 5fr 1fr;
+ border: solid 1px black;
+ height: 70px;
+ position: fixed;
+ top: 0;
+ right: 0;
+ left:0;
 }
