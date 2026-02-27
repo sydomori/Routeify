@@ -36,26 +36,31 @@
 
       </form>
 
-      <div class="optimization-preferences">
-        <form class="transport-preferences">
+      <form class="optimization-preferences">
+
+        <fieldset class="transport-preferences">
           <label for="transport-mode">Transport Mode:</label>
-          <select name="transport-mode">
+          <select class="trans-mode" name="transport-mode">
             <option value="driving">Driving</option>
             <option value="walking">Walking</option>
             <option value="electric-vehicle">Electric Vehicle</option>
             <option value="transit">Truck</option>
           </select>
-        </form>
-        <form class="optimization-type">
+        </fieldset>
+
+        <fieldset class="optimization-type">
           <label for="opt-type">Optimization Type:</label>
-          <select class="opt-type">
+          <select name="optimization-type" class="opt-type">
             <option value="fastest">Fastest</option>
             <option value="shortest">Shortest</option>
             <option value="fuel-efficient">Fuel-Efficient</option>
             <option value="balanced">Balanced</option>
           </select>
-        </form>
-      </div>
+        </fieldset>
+
+      </form>
+
+
       <div class="actions"></div>
       <div class="summary"></div>
     </aside>

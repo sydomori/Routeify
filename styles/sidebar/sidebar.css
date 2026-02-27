@@ -1,6 +1,6 @@
 .sidebar{
-  background-color: lightpink;
-  border: solid 1px black;
+  background-color: transparent;
+  border: solid 1px var(--border-color);
   width: 270px;
   height:calc(100vh -70px);
   position: fixed;
