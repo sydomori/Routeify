@@ -12,10 +12,53 @@
   <link rel="stylesheet" href="styles/header/header-content-1.css">
   <link rel="stylesheet" href="styles/header/header-content-2.css">
   <link rel="stylesheet" href="styles/header/header-content-3.css">
+  <link rel="stylesheet" href="styles/sidebar/sidebar.css">
+  <link rel="stylesheet" href="styles/sidebar/route-setup.css">
+  <link rel="stylesheet" href="styles/sidebar/optimization-preferences.css">
 </head>
 <body>
   <div class="body">
-    <sidebar class="sidebar"></sidebar>
+    <aside class="sidebar">
+      <form class="route-setup">
+
+        <div>
+          <input type="text" id="start-location" name="start-location" placeholder="Enter start location">
+        </div>
+
+        <div>
+          <input type="text" id="end-location" name="end-location" placeholder="Enter end location">
+        </div>
+
+        <div>
+          <input type="submit" id="add-stop" value="Add Stop">
+          <button class="added-stops-list">Stops List</button>
+        </div>
+
+      </form>
+
+      <div class="optimization-preferences">
+        <form class="transport-preferences">
+          <label for="transport-mode">Transport Mode:</label>
+          <select name="transport-mode">
+            <option value="driving">Driving</option>
+            <option value="walking">Walking</option>
+            <option value="electric-vehicle">Electric Vehicle</option>
+            <option value="transit">Truck</option>
+          </select>
+        </form>
+        <form class="optimization-type">
+          <label for="opt-type">Optimization Type:</label>
+          <select class="opt-type">
+            <option value="fastest">Fastest</option>
+            <option value="shortest">Shortest</option>
+            <option value="fuel-efficient">Fuel-Efficient</option>
+            <option value="balanced">Balanced</option>
+          </select>
+        </form>
+      </div>
+      <div class="actions"></div>
+      <div class="summary"></div>
+    </aside>
     <header class="header">
       <div class="header-content-1">
         <div class="logo-div">
