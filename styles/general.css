@@ -4,6 +4,17 @@
   font-family: 'Montserrat', sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  background-color: lightgray;
+  --primary: #2563EB;
+  --primary-hover: #1D4ED8;
+  --background: #F4F6F8;
+  --card-bg: #FFFFFF;
+  --text-primary: #111827;
+  --text-secondary: #6B7280;
+  --border-color: #E5E7EB;
+  --success: #16A34A;
+  --warning: #F59E0B;
+  --danger: #DC2626;
 }
 
 body{

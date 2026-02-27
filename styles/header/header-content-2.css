@@ -1,3 +1,45 @@
 .header-content-2{
-  background-color: lightsalmon;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 5px;
 }
+
+.navigation{
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--card-bg);
+  padding: 5px 20px 5px 20px;
+  width: 80%;
+  height: 80%;
+  border-radius: 40px;
+}
+
+.navigation button{
+  background-color: var(--primary);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition:background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navigation button:hover{
+  background-color: var(--primary-hover);
+  transform: scale(1.05);
+}
+
+.navigation button a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.navigation button a:hover{
+  color: var(--text-primary);
+} 
