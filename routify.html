@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="styles/sidebar/route-setup.css">
   <link rel="stylesheet" href="styles/sidebar/optimization-preferences.css">
   <link rel="stylesheet" href="styles/sidebar/actions.css">
+  <link rel="stylesheet" href="styles/sidebar/summary.css">
 </head>
 <body>
   <div class="body">
@@ -41,22 +42,26 @@
 
         <fieldset class="transport-preferences">
           <label for="transport-mode">Transport Mode:</label>
-          <select class="trans-mode" name="transport-mode">
-            <option value="driving">Driving</option>
-            <option value="walking">Walking</option>
-            <option value="electric-vehicle">Electric Vehicle</option>
-            <option value="transit">Truck</option>
+          <div class="trans-mode-container">
+            <select class="trans-mode" name="transport-mode" id="transport-mode">
+              <option value="driving">Driving</option>
+              <option value="walking">Walking</option>
+              <option value="electric-vehicle">Electric Vehicle</option>
+              <option value="transit">Truck</option>
           </select>
+          </div>
         </fieldset>
 
         <fieldset class="optimization-type">
           <label for="opt-type">Optimization Type:</label>
-          <select name="optimization-type" class="opt-type">
-            <option value="fastest">Fastest</option>
-            <option value="shortest">Shortest</option>
-            <option value="fuel-efficient">Fuel-Efficient</option>
-            <option value="balanced">Balanced</option>
-          </select>
+          <div class="opt-type-container">
+            <select name="optimization-type" class="opt-type" id="opt-type">
+             <option value="fastest">Fastest</option>
+             <option value="shortest">Shortest</option>
+             <option value="fuel-efficient">Fuel-Efficient</option>
+             <option value="balanced">Balanced</option>
+            </select>
+          </div>
         </fieldset>
 
       </form>
@@ -66,7 +71,12 @@
         <button class="generate-route">Generate Route</button>
         <button class="clear-route">Clear Route</button>
       </div>
-      <div class="summary"></div>
+      <div class="summary">
+        <h3>Route Summary</h3>
+        <p>Total Distance: <span id="total-distance">0 km</span></p>
+        <p>Estimated Time: <span id="estimated-time">0 mins</span></p>
+        <p>Estimated Distance: <span id="estimated-distance">0 km</span></p>
+      </div>
     </aside>
     <header class="header">
       <div class="header-content-1">

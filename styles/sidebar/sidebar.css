@@ -17,6 +17,26 @@
 .sidebar div{
   width: auto;
   height: auto;
-  
+}
+
+/* Width */
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track (background) */
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: var(--border-color);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary);
 }
 

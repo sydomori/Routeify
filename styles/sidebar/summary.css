@@ -1,0 +1,26 @@
+.summary{
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid 1px var(--border-color);
+  background-color: var(--card-bg);
+}
+
+.summary h3{
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  text-decoration: underline;
+}
+
+.summary p{
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
