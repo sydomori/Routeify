@@ -1,12 +1,12 @@
 .header{
  display: grid;
- grid-template-columns: 1fr 5fr 1fr;
- border: none 1px var(--border-color);
+ grid-template-columns: 5fr 1fr;
+ border-bottom: 1px solid var(--border-color);
  height: 70px;
  position: fixed;
  top: 0;
  right: 0;
- left:0;
+ left: 293px;
  background-color: transparent;
  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }

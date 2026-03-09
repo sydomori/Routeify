@@ -10,17 +10,17 @@
   font-family: 'Mrs Saint Delafield', cursive;
   font-optical-sizing: auto;
   font-weight: normal;
-  color: var(--text-primary);
+  color: var(--background);
   font-size: 35px;
 }
 
 .logo-div{
-  background-color:var(--card-bg);
+  background-color:var(--primary);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 3px;
   box-sizing: content-box;
-  width: 150px;
-  border-radius:40px ;
+  width: 200px;
+  border-radius:20px;
 }
